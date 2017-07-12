@@ -1,0 +1,19 @@
+{
+  "name": "simple-rpi-local-server-led-control",
+  "version": "1.0.0",
+  "description": "SImple web server that runs html page which can control led connected to rpi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rpi"
+  ],
+  "author": "satya sankar sahoo (www.myelectronicslab.com)",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "rpi-gpio": "^0.8.1"
+  }
+}
