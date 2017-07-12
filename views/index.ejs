@@ -1,10 +1,46 @@
-<image src = 'images/LED.png' alt="LED" style="width:180px;height:180px;">
+<meta name="viewport" content="width=500, initial-scale=1"> <!--This line of code is for mobile responsive -->
+
+<div class="BorderMargin">
+  <image src = '/images/LED.png' alt="LED" style="width:180px;height:180px;">
+
+  <form action="/led/on" method="post">
+    <button type="submit" class="button">LED On </button>
+      <button type="submit" formmethod="post" formaction="/led/off" class="button button3">LED Off</button>
+  </form>
+
+  <a>Led Status: <%=status %></a>
+</div>
+
+ <image src = '/images/nodejs-logo.png' alt="NodeJS" style="width:180px;height:180px;  float: left;">
+  <image src = '/images/rpi-logo.png' alt="NodeJS" style="width:140px;height:180px;  float: left;">
+
+<!-- The below code is only for look and styling -->
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
 
 
-<form action="/led/on" method="post">
-  <button type="submit">LED On </button>
-    <button type="submit" formmethod="post" formaction="/led/off">LED Off</button>
-</form>
-
-<a>Led Status: <%=status %></a>
-
+.BorderMargin {
+  
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}   
+</style>
